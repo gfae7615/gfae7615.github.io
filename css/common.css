@@ -1,10 +1,11 @@
-@import url('http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700');
-@import url('font-awesome.css');
-@import url('animate.css');
+@import url("http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:400,600,700");
+@import url("font-awesome.css");
+@import url("animate.css");
 
 body {
   /* font-family: 'Open Sans', Arial, sans-serif; */
-  font-family: PingFangSC-Regular, PingFang SC;
+  /* font-family: PingFangSC-Regular, PingFang SC; */
+  /* font-family: "PingFang SC,AlibabaSans,Microsoft Yahei,Arial,Helvetica,sans-serif"; */
   font-size: 12px;
   font-weight: 300;
   line-height: 1.6em;
@@ -50,6 +51,12 @@ h3 {
   position: relative;
 }
 
+.swiper-container {
+  --swiper-theme-color: #fff; /* 设置Swiper风格 */
+  --swiper-navigation-color: #fff; /* 单独设置按钮颜色 */
+  --swiper-navigation-size: 40px; /* 设置按钮大小 */
+}
+
 /*  Header
 ==================================== */
 
@@ -61,7 +68,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
 }
 
@@ -90,15 +97,16 @@ header .header-nav {
 
 .header-nav li {
   float: left;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .header-nav li a {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 14px;
 }
 
-.header-nav li.active a {
+.header-nav li.active a,
+.header-nav li a:hover {
   color: #fff;
 }
 
@@ -144,7 +152,6 @@ header .header-nav {
   border-radius: 50%;
   border-color: #0ACCCE;
 } */
-
 
 /* header .navbar-collapse ul.navbar-nav {
   float: right;
@@ -211,7 +218,6 @@ header .navbar {
   -o-transition: all .3s ease;
   transition: all .3s ease;
 } */
-
 
 /* .dropdown-menu li a:hover {
   color: #fff !important;
@@ -280,7 +286,6 @@ header ul.nav li ul li a {
   font-weight: 300;
   text-transform: uppercase;
 } */
-
 
 /* .navbar .nav>li>a {
   color: rgba(255, 255, 255, 0.7);
@@ -361,20 +366,47 @@ select.selectmenu {
 .scrollup,
 .icon-contact {
   position: fixed;
-  bottom: 48px;
+  bottom: 58px;
   right: 48px;
   z-index: 1000;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
+}
+.scrollup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e0e0e0;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
+  /* transition: all 0.1s; */
 }
-
+.scrollup .icon-arrow-white {
+  display: none;
+}
+.scrollup .icon-arrow-black {
+  display: block;
+}
+.scrollup.black {
+  border-color: #38383b;
+}
+.scrollup.black .icon-arrow-white {
+  display: block;
+}
+.scrollup.black .icon-arrow-black {
+  display: none;
+}
 .icon-contact {
-  bottom: 90px;
+  width: 76px;
+  height: 76px;
+  bottom: 140px;
+  right: 40px;
 }
 
-.scrollup img,
+.scrollup img {
+  width: 40px;
+  height: 30px;
+}
 .icon-contact img {
   width: 100%;
   height: 100%;
@@ -432,8 +464,8 @@ select.selectmenu {
   margin-right: 10px;
 }
 
-.bubble-tip-content {}
-
+.bubble-tip-content {
+}
 
 /* 应用案例 */
 .post {
@@ -449,8 +481,9 @@ select.selectmenu {
 }
 
 .post-memo {
-  color: #1D2649;
+  color: #1d2649;
   font-size: 14px;
+  opacity: 0.5;
 }
 
 .post-title {
@@ -471,26 +504,67 @@ select.selectmenu {
 }
 
 .post-stay {
-  background: #DCF3ED;
-  color: #139D7B;
+  background: #dcf3ed;
+  color: #139d7b;
 }
 
-
 .post-makeup {
-  background: #FDEFE6;
-  color: #C55C1E;
+  background: #fdefe6;
+  color: #c55c1e;
+}
+
+.post-card-img img {
+  position: relative;
+  z-index: 9;
+  max-width: 100%;
+  transition: all 0.3s;
+}
+.post-card-img {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.post-card-img .filter {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 20, 0.4);
+  transition: all 0.3s;
+}
+.post-card-img .player {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  transition: all 0.3s;
+}
+.post-card-img:hover .filter,
+.post-card-img:hover .player {
+  display: block;
+}
+.post-card-img:hover img {
+  transform: scale(1.1);
 }
 
 /* footer */
 
 .row-title-img {
-  width: 185px;
+  width: 210px;
 }
 
 footer {
-  padding: 50px 0 20px 0;
-  color: #BFBFBF;
-  background: #1E1E21;
+  padding: 100px 0;
+  color: #bfbfbf;
+  background: #1e1e21;
 }
 
 footer a {
@@ -510,6 +584,16 @@ footer h6 {
   color: #fff;
 }
 
+.footer-concat-img {
+  width: 96px;
+  height: 96px;
+  margin: 30px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.footer-concat-img:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
 /* .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   color: #5e5e5e;
@@ -538,7 +622,7 @@ footer h6 {
 }
 
 .modal-dialog .body-img {
-  width: 50px;
+  width: 96px;
   margin-bottom: 20px;
 }
 
@@ -547,7 +631,7 @@ footer h6 {
 }
 
 .modal-dialog.wechat .body-img {
-  width: 80px;
+  width: 230px;
 }
 
 button.close {
@@ -558,7 +642,6 @@ button.close {
   height: 30px;
   opacity: 1;
 }
-
 
 @media (max-width: 767px) {
   /* .navbar-default .navbar-collapse {
@@ -651,10 +734,10 @@ button.close {
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #f5f5f5;
-    border: 1px solid rgba(0, 0, 0, .15);
+    border: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 0;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   }
 
   footer .col-lg-1,
@@ -675,7 +758,6 @@ button.close {
   [class*="span"] {
     margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -684,12 +766,9 @@ button.close {
     margin-top: 20px;
   }
 
-
   .search {
     float: left;
   }
-
-
 
   .cta-text {
     margin: 0 auto;
@@ -701,15 +780,12 @@ button.close {
     height: 20px;
     font-size: 14px;
   }
-
-
 }
 
 /*  Media queries 
 ============================= */
 
 @media (min-width: 768px) and (max-width: 979px) {
-
   a.detail {
     background: none;
     width: 100%;

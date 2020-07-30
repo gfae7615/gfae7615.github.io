@@ -3,7 +3,8 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.header-nav li.active a {
+.header-nav li.active a,
+.header-nav li a:hover {
   color: #000;
 }
 
@@ -11,7 +12,6 @@ header .header-nav {
   background: #fff;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
 }
-
 
 /* 二级切换 */
 .tabbar-nav {
@@ -26,17 +26,17 @@ header .header-nav {
   margin-right: 40px;
 }
 
-
 .tabbar-nav li a {
-  color: #565A6A;
+  color: #565a6a;
 }
 
-.tabbar-nav li.active a {
+.tabbar-nav li.active a,
+.tabbar-nav li a:hover {
   color: #000;
 }
 
 .tabbar-nav li.active::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   bottom: -5px;
@@ -44,7 +44,6 @@ header .header-nav {
   width: 40px;
   height: 2px;
   background: #368746;
-
 }
 
 .slides .row {
@@ -53,10 +52,45 @@ header .header-nav {
 
 /* h5互动页 */
 .post-h5 {
-  background: url(../img/works_H5_bgcard.png) 100% 100%;
+  /* background: url(../img/works_H5_bgcard.png) 100% 100%; */
+  margin: 30px;
+  box-shadow: 0px 10px 56px 0px rgba(62, 66, 81, 0.2);
+  border-radius: 50px;
 }
 
 .post-h5 img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+}
+/* 会展设计占位 */
+.seize-box {
+  position: relative;
+  width: 100%;
+  margin: 20px 0 40px 0;
+}
+.seize-img {
+  width: 100%;
+}
+.seize-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.seize-content h4 {
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 30px;
+}
+.seize-content p {
+  width: 50%;
+  line-height: 36px;
 }

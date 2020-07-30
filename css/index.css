@@ -1,3 +1,19 @@
+header .header-nav.scroll {
+  background: #fff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+}
+.header-nav.scroll li a {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.header-nav.scroll li.active a,
+.header-nav.scroll li a:hover {
+  color: #000;
+}
+/* header .header-nav,
+header .header-nav li a {
+  transition: 0.3s;
+} */
 /* banner上内容 */
 .flex-caption {
   zoom: 1;
@@ -15,17 +31,12 @@
   letter-spacing: 1px;
   margin-bottom: 8px;
   color: #fff;
-  font-size: 60px;
+  font-size: 80px;
   /* text-transform: uppercase; */
 }
 
 .flex-caption p {
   margin-top: 12px;
-}
-
-.post-card img {
-  margin-bottom: 20px;
-  max-width: 100%;
 }
 
 /* 活动策划 */
@@ -36,7 +47,7 @@
 .features .media-heading {
   margin-bottom: 10px;
   color: #333;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .features .media.service-box {
@@ -51,11 +62,10 @@
 .media.service-box {
   margin: 25px 0 36px;
   padding: 20px 15px 10px;
-  background: #FFFFFF;
+  background: #ffffff;
   overflow: hidden;
-  border-bottom: 2px solid #E0E0E0;
+  border-bottom: 2px solid #e0e0e0;
 }
-
 
 .media {
   margin-top: 15px;
@@ -83,7 +93,7 @@
   right: 10%;
   width: 102%;
   height: 124%;
-  background: #DAE038;
+  background: #dae038;
 }
 
 .wrap-serve-2 {
@@ -98,7 +108,7 @@
 
 /* 介绍页 */
 .about-box:before {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
@@ -111,8 +121,11 @@
   vertical-align: middle;
 }
 
-.features-text-box {
+.col-features-text-box {
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 200px;
+}
+.features-text-box {
+  width: 208px;
 }

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Mlecoo官网</title>
+  <title>页面标题</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="" />
   <!-- css -->
@@ -62,23 +62,26 @@
       <div id="swiper" class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="img/homepage_banner_1.png" alt="" />
+            <img style="width: 100%;" src="img/homepage_banner_1.png" alt="" />
             <div class="flex-caption container">
               <h1>The Story Of Our Company</h1>
               <img style="width: 100px;height: 100px;margin-top: 10px;border-radius: 50%;border: 4px solid #fff;"
                 src="img/icon_head.png" alt="" />
-              <p style="font-size: 18px;">妙妙库库和他の朋友们</p>
-              <p style="font-size: 12px;">Melcoo and his friends</p>
+              <p style="margin-top: 20px;font-size: 17px;">妙妙库库和他の朋友们</p>
+              <p style="font-size: 12px;opacity: .4;">Mlecoo and his friends</p>
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="img/homepage_banner_2.png" alt="" />
+            <img style="width: 100%;" src="img/homepage_banner_2.png" alt="" />
             <!-- <div class="flex-caption container">
               <h3>Best Equipments</h3>
               <p>Doloribus omnis minus temporibus perferendis ipsa</p>
             </div> -->
           </div>
-          </ul>
+          <div class="swiper-button-prev"></div>
+          <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+          <div class="swiper-button-next"></div>
+          <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
         </div>
         <!-- end slider -->
     </section>
@@ -88,11 +91,12 @@
           <div class="col-lg-12">
             <div class="alignleft" style="
                   width: 80%;
-                  margin: 0 auto; /* font-family: AlibabaSans-Bold,AlibabaSans; */
-                  font-weight: bold;
+                  margin: 30px auto; /* font-family: AlibabaSans-Bold,AlibabaSans; */
+                  /* font-weight: bold; */
                   line-height: 32px;
+                  font-size: 14px;
                 ">
-              <h1 style="display: inline-block;">Melcoo</h1>
+              <h1 style="display: inline-block;">Mlecoo</h1>
               是一家专业从事会展设计、活动策划、用户体验研究、创意设计为一体的综合性文化创意设计公司，致力于在互联网时代下为客户提供品牌或产品传播的全方位服务；历经多年的创新与发展，始终秉承“坚持品质服务，传播品牌声音”的经营理念，不断整合运用行业的新资源、新技术、新思维，创造深入人心的
               “ 体验触点 ”，为客户品牌发声，建构起品牌与市场的有效沟通桥梁。
             </div>
@@ -177,7 +181,7 @@
     </section>
     <section id="events">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin: 100px 0 40px 0;">
           <div class="col-md-12">
             <div class="aligncenter">
               <img class="row-title-img" src="img/homepage_title_1.png" alt="" />
@@ -186,10 +190,14 @@
             <br />
           </div>
         </div>
-        <div class="row" class="eventsLink">
+        <div class="row">
           <div class="col-md-4">
             <div class="post-card">
-              <img src="img/works_video_1.png" alt="" />
+              <div class="post-card-img">
+                <div class="filter"></div>
+                <img class="player" src="img/icon_play.png" alt="" />
+                <img src="img/works_video_1.png" alt="" />
+              </div>
               <div class="post-content">
                 <div class="post-memo">2020新款全新复古红12色</div>
                 <div class="post-title">YSL 圣罗兰细管小金条产品介绍视频</div>
@@ -199,7 +207,11 @@
           </div>
           <div class="col-md-4">
             <div class="post-card">
-              <img src="img/works_video_2.png" alt="" />
+              <div class="post-card-img">
+                <div class="filter"></div>
+                <!-- <div class="player"></div> -->
+                <img src="img/works_video_2.png" alt="" />
+              </div>
               <div class="post-content">
                 <div class="post-memo">全面升级旗舰音质</div>
                 <div class="post-title">小米小爱音响PRO产品介绍视频</div>
@@ -209,7 +221,11 @@
           </div>
           <div class="col-md-4">
             <div class="post-card">
-              <img src="img/works_video_3.png" alt="" />
+              <div class="post-card-img">
+                <div class="filter"></div>
+                <!-- <div class="player"></div> -->
+                <img src="img/works_video_3.png" alt="" />
+              </div>
               <div class="post-content">
                 <div class="post-memo">Line Friends IP合作款</div>
                 <div class="post-title">九阳魔法四季料理豆浆杯A1nano</div>
@@ -222,7 +238,7 @@
     </section>
     <section id="serve">
       <div class="container">
-        <div class="row">
+        <div class="row" style="margin: 100px 0 40px 0;">
           <div class="col-md-12">
             <div class="aligncenter">
               <img class="row-title-img" src="img/homepage_title_2.png" alt="" />
@@ -231,7 +247,7 @@
             <br />
           </div>
         </div>
-        <div class="row" class="eventsLink">
+        <div class="row">
           <div class="col-md-8">
             <div class="wrap-serve" style="background: #a15aec;">
               <img style="width: 60%;" src="img/homepage_pic_1.png" alt="" />
@@ -260,12 +276,12 @@
             </div>
           </div>
         </div>
-        <div class="row" style="margin-top: 10%;" class="eventsLink">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
+        <div class="row" style="margin-top: 10%;">
+          <div class="col-md-5"></div>
+          <div class="col-md-7">
             <div class="wrap-serve wrap-serve-2">
               <div class="wrap-serve-bg"></div>
-              <img style="position: relative;" src="img/homepage_pic_2.png" alt="" />
+              <img style="position: relative;width: 100%;" src="img/homepage_pic_2.png" alt="" />
               <div class="wrap-text-box wrap-text-box-2">
                 <h4>Research Service</h4>
                 <h2 class="">用研服务设计</h2>
@@ -293,7 +309,7 @@
     </section>
     <section id="trade">
       <div class="container">
-        <div class="row" style="margin-top: 50px;">
+        <div class="row"  style="margin: 150px 0 40px 0;">
           <div class="col-md-12">
             <div class="aligncenter">
               <img class="row-title-img" src="img/homepage_title_3.png" alt="" />
@@ -301,10 +317,8 @@
             <br />
           </div>
         </div>
-        <div class="row" class="eventsLink">
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
-          <div class="col-md-3"></div>
+        <div class="row">
+          <div class="col-md-12" style="display: flex;justify-content: center;align-items: center;margin-bottom: 30px;padding: 100px 0;background: #f3f4f7;font-size: 30px;">正在建设中</div>
         </div>
       </div>
   </div>
@@ -319,15 +333,15 @@
           <br />
         </div>
       </div>
-      <div class="row" style="text-align: center;">
+      <div class="row" style="margin-top: 40px;text-align: center;">
         <span data-type="wechat" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-          <img style="width: 48px; height: 48px;" src="img/icon_wechat.png" />
+          <img class="footer-concat-img" src="img/icon_wechat.png" />
         </span>
         <span data-type="phone" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-          <img style="width: 48px; height: 48px;" src="img/icon_phone.png" />
+          <img class="footer-concat-img" src="img/icon_phone.png" />
         </span>
         <span data-type="email" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-          <img style="width: 48px; height: 48px;" src="img/icon_email.png" />
+          <img class="footer-concat-img" src="img/icon_email.png" />
         </span>
       </div>
     </div>
@@ -341,12 +355,13 @@
         <div style="font-size: 12px;">电话</div>
         <div style="text-decoration: underline;font-size: 16px;">0571-8897557</div>
         <div style="font-size: 12px;">邮箱</div>
-        <div style="text-decoration: underline;font-size: 16px;">Melcoo-zb@163.com</div>
+        <div style="text-decoration: underline;font-size: 16px;">Mlecoo-zb@163.com</div>
       </div>
     </div>
   </div>
-  <a href="#" class="scrollup">
-    <img src="img/icon_to_top.png" />
+  <a id="scrollup" href="#" class="scrollup">
+    <img class="icon-arrow-white" src="img/icon-arrow-white.png" />
+    <img class="icon-arrow-black" src="img/icon-arrow-black.png" />
   </a>
   <!-- 模态框（Modal） -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

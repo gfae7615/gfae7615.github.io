@@ -1,10 +1,10 @@
 /*global jQuery:false */
 jQuery(document).ready(function ($) {
-  "use strict";
+  "use strict"
 
-
-  $('#services').find('.features-text-box').each(function () {
-    $(this).css('height', $('#imageLoad').height() + 'px')
-  })
-
-});
+  $("#services")
+    .find(".col-features-text-box")
+    .each(function () {
+      $(this).css("height", $("#imageLoad").height() + "px")
+    })
+})
