@@ -3,13 +3,7 @@ jQuery(document).ready(function ($) {
   "use strict"
   $("#myModal").on("click", ".modal-flex", function (e) {
     if ($(e.target).attr("class") === "modal-flex") {
-      // $("#myModal").modal("toggle")
       $("#myModal").modal("hide")
-
-      $("body").css({
-        overflow: "auto",
-        "margin-right": "0",
-      })
     }
   })
 
@@ -44,10 +38,10 @@ jQuery(document).ready(function ($) {
     modalDom.modal({
       keyboard: true,
     })
-    $("body").css({
-      overflow: "hidden",
-      "margin-right": "15px",
-    })
+    // $("body").css({
+    //   overflow: "hidden",
+    //   "margin-right": "15px",
+    // })
   })
 
   var lastScrollTop = 0
@@ -91,14 +85,24 @@ jQuery(document).ready(function ($) {
       var st = $(window).scrollTop()
       if (st < lastScrollTop) {
         if (st < 10) {
+          $(".header-nav").css("box-shadow", "0px 2px 8px 0px rgba(0, 0, 0, 0)")
           $(".header-nav").removeClass("scroll")
         } else {
+          $(".header-nav").css(
+            "box-shadow",
+            "0px 2px 8px 0px rgba(0, 0, 0, 0.06)"
+          )
           $(".header-nav").addClass("scroll").slideDown()
         }
       } else {
         if (st < 100) {
+          $(".header-nav").css("box-shadow", "0px 2px 8px 0px rgba(0, 0, 0, 0)")
           $(".header-nav").addClass("scroll")
         } else if (st > 200) {
+          $(".header-nav").css(
+            "box-shadow",
+            "0px 2px 8px 0px rgba(0, 0, 0, 0.06)"
+          )
           $(".header-nav").slideUp()
         }
       }

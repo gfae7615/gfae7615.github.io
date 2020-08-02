@@ -10,13 +10,13 @@
 
 header .header-nav {
   background: #fff;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  /* box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.06); */
 }
 
 /* 二级切换 */
 .tabbar-nav {
   float: right;
-  margin-top: 110px;
+  margin-top: 130px;
 }
 
 .tabbar-nav li {
@@ -33,6 +33,8 @@ header .header-nav {
 .tabbar-nav li.active a,
 .tabbar-nav li a:hover {
   color: #000;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .tabbar-nav li.active::after {
@@ -80,6 +82,7 @@ header .header-nav {
   left: 0;
   top: 0;
   width: 100%;
+  background: rgb(0, 0, 0, 0.2);
   height: 100%;
   font-size: 18px;
   text-align: center;

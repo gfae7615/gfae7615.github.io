@@ -1,45 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mlecoo官网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <!-- css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>页面标题</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <!-- css -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/swiper.min.css" rel="stylesheet" />
-  <link href="css/common.css" rel="stylesheet" />
-  <link href="css/index.css" rel="stylesheet" />
-</head>
-
-<body>
-
-  <div id="wrapper" class="home-page">
-    <!-- start header -->
-    <header>
-      <div class="header-nav">
-        <div class="container">
-          <div class="navbar-header">
-            <a href="index.html">
-              <img src="img/logo_white.png" alt="logo" />
-            </a>
-          </div>
-          <div class="nav-box">
-            <ul class="nav-content">
-              <li><a href="index.html">首页</a></li>
-              <li><a href="case.html">案例</a></li>
-              <li class="active"><a href="introduce.html">介绍</a></li>
-            </ul>
+  <body>
+    <div id="wrapper" class="home-page">
+      <!-- start header -->
+      <header>
+        <div class="header-nav">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="index.html">
+                <img src="img/logo_white.png" alt="logo" />
+              </a>
+            </div>
+            <div class="nav-box">
+              <ul class="nav-content">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="case.html">案例</a></li>
+                <li class="active"><a href="introduce.html">介绍</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <!-- end header -->
-    <section id="banner">
-      <!-- Slider -->
-      <div id="swiper" class="swiper-container">
+      </header>
+      <!-- end header -->
+      <section id="banner">
+        <!-- Slider -->
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img style="width: 100%;" src="img/homepage_banner_1.png" alt="" />
+            <div class="flex-caption container">
+              <h1>The Story Of Our Company</h1>
+              <img
+                style="
+                  width: 100px;
+                  height: 100px;
+                  margin-top: 10px;
+                  border-radius: 50%;
+                  border: 4px solid #fff;
+                "
+                src="img/icon_head.png"
+                alt=""
+              />
+              <p style="margin-top: 20px; font-size: 17px;">
+                妙妙库库和他の朋友们
+              </p>
+              <p style="font-size: 12px; opacity: 0.4;">
+                Mlecoo and his friends
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <!-- <img style="width: 100%;" src="img/homepage_banner_2.png" alt="" /> -->
+            <!-- <div class="flex-caption container">
+                      <h3>Best Equipments</h3>
+                      <p>Doloribus omnis minus temporibus perferendis ipsa</p>
+                    </div> -->
+          </div>
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+          <!-- <div class="swiper-button-next"></div> -->
+          <!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+        <!-- <div id="swiper hide" class="swiper-container">
+        <div class="swiper-wrapper hide">
           <div class="swiper-slide">
             <img src="img/homepage_banner_1.png" alt="" />
             <div class="flex-caption container">
@@ -52,227 +86,312 @@
           </div>
           <div class="swiper-slide">
             <img src="img/homepage_banner_2.png" alt="" />
-            <!-- <div class="flex-caption container">
-              <h3>Best Equipments</h3>
-              <p>Doloribus omnis minus temporibus perferendis ipsa</p>
-            </div> -->
           </div>
           </ul>
         </div>
+      </div> -->
         <!-- end slider -->
-    </section>
-    <section class="txt-area">
-      <div class="container">
-        <div class="row" style="margin: 80px 0 20px 0;">
-          <div class="col-md-12">
-            <div class="aligncenter">
-              <img src="img/about_title_1.png" alt="" />
+      </section>
+      <section class="txt-area">
+        <div class="container">
+          <div class="row" style="margin: 80px 0 20px 0;">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <div class="img-box-shadow">
+                  <img src="img/about_title_1.png" alt="" />
+                </div>
+              </div>
+              <br />
             </div>
-            <br />
           </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="alignleft" style="
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="alignleft"
+                style="
                   width: 80%;
                   margin: 30px auto; /* font-family: AlibabaSans-Bold,AlibabaSans; */
                   /* font-weight: bold; */
                   line-height: 32px;
                   font-size: 14px;
-                ">
-              <h1 style="display: inline-block;">Mlecoo</h1>
-              是一家专业从事会展设计、活动策划、用户体验研究、创意设计为一体的综合性文化创意设计公司，致力于在互联网时代下为客户提供品牌或产品传播的全方位服务；历经多年的创新与发展，始终秉承“坚持品质服务，传播品牌声音”的经营理念，不断整合运用行业的新资源、新技术、新思维，创造深入人心的
-              “ 体验触点 ”，为客户品牌发声，建构起品牌与市场的有效沟通桥梁。
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div class="container">
-        <div class="row" style="margin: 80px 0 50px 0;">
-          <div class="col-md-12">
-            <div class="aligncenter">
-              <img src="img/about_title_2.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="row" style="margin-top: 20px;">
-          <!-- <div class="col-md-12">
-            <div class="col-md-12"> -->
-              <div class="col-md-12" style="padding: 85px 0;background: #F3F4F7; line-height: 40px;">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                  <div class="aligncenter">
-                    <img style="width: 100%;" src="img/about_culture.png" alt="" />
-                  </div>
-                  <div style="font-size: 22px;font-weight: bold; margin-top: 40px;">我们理念</div>
-                  <div style="font-size: 18px; letter-spacing: 6px;">坚持品质服务，传播品牌声音使命，为客户创造品牌价值</div>
-                  <div style="font-size: 22px;font-weight: bold;text-align: right; margin-top: 20px;">我们愿景</div>
-                  <div style="font-size: 18px;text-align: right; letter-spacing: 6px">成长为文创领域内标杆企业</div>
-                </div>
-                <div class="col-md-2"></div>
+                "
+              >
+                <h1 style="display: inline-block;">Mlecoo</h1>
+                是一家专业从事会展设计、活动策划、用户体验研究、创意设计为一体的综合性文化创意设计公司，致力于在互联网时代下为客户提供品牌或产品传播的全方位服务；历经多年的创新与发展，始终秉承“坚持品质服务，传播品牌声音”的经营理念，不断整合运用行业的新资源、新技术、新思维，创造深入人心的
+                “ 体验触点 ”，为客户品牌发声，建构起品牌与市场的有效沟通桥梁。
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="row" style="margin: 80px 0 50px 0;">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <img src="img/about_title_2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row" style="margin-top: 20px;">
+            <!-- <div class="col-md-12">
+            <div class="col-md-12"> -->
+            <div
+              class="col-md-12"
+              style="padding: 85px 0; background: #f3f4f7; line-height: 40px;"
+            >
+              <div class="col-md-2"></div>
+              <div class="col-md-8" style="margin: 0 auto;">
+                <div class="aligncenter">
+                  <img
+                    style="width: 100%;"
+                    src="img/about_culture.png"
+                    alt=""
+                  />
+                </div>
+                <div
+                  style="font-size: 22px; font-weight: bold; margin-top: 40px;"
+                >
+                  我们理念
+                </div>
+                <div style="font-size: 18px; letter-spacing: 6px;">
+                  坚持品质服务，传播品牌声音使命，为客户创造品牌价值
+                </div>
+                <div
+                  style="
+                    font-size: 22px;
+                    font-weight: bold;
+                    text-align: right;
+                    margin-top: 20px;
+                  "
+                >
+                  我们愿景
+                </div>
+                <div
+                  style="
+                    font-size: 18px;
+                    text-align: right;
+                    letter-spacing: 6px;
+                  "
+                >
+                  成长为文创领域内标杆企业
+                </div>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
             <!-- </div>
           </div> -->
-        </div>
-      </div>
-    </section>
-    <section id="services">
-      <div class="container">
-        <div class="row" style="margin: 80px 0 50px 0;">
-          <div class="col-md-12">
-            <div class="aligncenter">
-              <img src="img/about_title_3.png" alt="" />
-            </div>
-            <br />
           </div>
         </div>
-        <div class="row"style="margin-bottom: 50px;">
-          <div class="features">
-            <div class="row fadeInUp animated" data-wow-duration="300ms" data-wow-delay="0ms" style="
-                  visibility: visible;
-                  -webkit-animation-duration: 300ms;
-                  -webkit-animation-delay: 0ms;
-                ">
-              <div class="col-md-8">
-                <img src="img/about_pic_1.png" id="imageLoad" alt="" />
+      </section>
+      <section id="services">
+        <div class="container">
+          <div class="row" style="margin: 80px 0 50px 0;">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <img src="img/about_title_3.png" alt="" />
               </div>
-              <div class="col-md-4 col-features-text-box">
-                <div class="features-text-box">
-                  <p>Exhibition Design</p>
-                  <h4>会展设计</h4>
-                  <p>
-                    数字化展馆、展馆/展示类场所设施（如企业展厅、会展展台、乐园布置等）的设计及施工
-                  </p>
-                </div>
-              </div>
+              <br />
             </div>
-            <div class="row fadeInUp animated" style="margin-top: 100px;" data-wow-duration="300ms"
-              data-wow-delay="0ms" style="
+          </div>
+          <div class="row" style="margin-bottom: 50px;">
+            <div class="features">
+              <div
+                class="row fadeInUp animated"
+                data-wow-duration="300ms"
+                data-wow-delay="0ms"
+                style="
                   visibility: visible;
                   -webkit-animation-duration: 300ms;
                   -webkit-animation-delay: 0ms;
-                ">
-              <div class="col-md-4 col-features-text-box">
-                <div class="features-text-box">
-                  <p>Event Planning</p>
-                  <h4>活动策划</h4>
-                  <p>
-                    品牌或产品宣传活动策划与执行（包含活动方案策划/形象设计/物料及场所设计制作/活动运营开展等）
-                  </p>
+                "
+              >
+                <div class="col-md-8">
+                  <img src="img/about_pic_1.png" id="imageLoad" alt="" />
+                </div>
+                <div class="col-md-4 col-features-text-box">
+                  <div class="features-text-box">
+                    <p>Exhibition Design</p>
+                    <h4>会展设计</h4>
+                    <p>
+                      数字化展馆、展馆/展示类场所设施（如企业展厅、会展展台、乐园布置等）的设计及施工
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-8">
-                <img src="img/about_pic_2.png" alt="" />
-              </div>
-            </div>
-            <div class="row fadeInUp animated" style="margin-top: 100px;" data-wow-duration="300ms"
-              data-wow-delay="0ms" style="
+              <div
+                class="row fadeInUp animated"
+                style="margin-top: 100px;"
+                data-wow-duration="300ms"
+                data-wow-delay="0ms"
+                style="
                   visibility: visible;
                   -webkit-animation-duration: 300ms;
                   -webkit-animation-delay: 0ms;
-                ">
-              <div class="col-md-8">
-                <img src="img/about_pic_3.png" alt="" />
-              </div>
-              <div class="col-md-4 col-features-text-box">
-                <div class="features-text-box">
-                  <p>User Experience Research</p>
-                  <h4>用户体验研究</h4>
-                  <p>
-                    品牌或产品视觉媒介（包含多媒体广告、产品造型包装、品牌形象、场馆布置等）的用户体验研究，发掘触达人心的品牌触点；提供如问卷调查、用户访谈等传统用户研究手段外，还提供眼动研究这一新兴客观性研究手段
-                  </p>
+                "
+              >
+                <div class="col-md-4 col-features-text-box">
+                  <div class="features-text-box">
+                    <p>Event Planning</p>
+                    <h4>活动策划</h4>
+                    <p>
+                      品牌或产品宣传活动策划与执行（包含活动方案策划/形象设计/物料及场所设计制作/活动运营开展等）
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <img src="img/about_pic_2.png" alt="" />
                 </div>
               </div>
-            </div>
-            <div class="row fadeInUp animated" style="margin-top: 100px;" data-wow-duration="300ms"
-              data-wow-delay="0ms" style="
+              <div
+                class="row fadeInUp animated"
+                style="margin-top: 100px;"
+                data-wow-duration="300ms"
+                data-wow-delay="0ms"
+                style="
                   visibility: visible;
                   -webkit-animation-duration: 300ms;
                   -webkit-animation-delay: 0ms;
-                ">
-              <div class="col-md-4 col-features-text-box">
-                <div class="features-text-box">
-                  <p>Creative Design</p>
-                  <h4>创意设计</h4>
-                  <p>
-                    品牌或产品营销视频（如微电影/抖音宣传视频等）的设计制作
-                    品牌或产品立体IP形象定制及相应物料/周边产品设计制作
-                    互动营销推广类H5及小程序设计制作，如互动小游戏/互动性宣传页/活动报名页等
-                  </p>
+                "
+              >
+                <div class="col-md-8">
+                  <img src="img/about_pic_3.png" alt="" />
+                </div>
+                <div class="col-md-4 col-features-text-box">
+                  <div class="features-text-box">
+                    <p>User Experience Research</p>
+                    <h4>用户体验研究</h4>
+                    <p>
+                      品牌或产品视觉媒介（包含多媒体广告、产品造型包装、品牌形象、场馆布置等）的用户体验研究，发掘触达人心的品牌触点；提供如问卷调查、用户访谈等传统用户研究手段外，还提供眼动研究这一新兴客观性研究手段
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-8">
-                <img src="img/about_pic_4.png" alt="" />
+              <div
+                class="row fadeInUp animated"
+                style="margin-top: 100px;"
+                data-wow-duration="300ms"
+                data-wow-delay="0ms"
+                style="
+                  visibility: visible;
+                  -webkit-animation-duration: 300ms;
+                  -webkit-animation-delay: 0ms;
+                "
+              >
+                <div class="col-md-4 col-features-text-box">
+                  <div class="features-text-box">
+                    <p>Creative Design</p>
+                    <h4>创意设计</h4>
+                    <p>
+                      品牌或产品营销视频（如微电影/抖音宣传视频等）的设计制作
+                      品牌或产品立体IP形象定制及相应物料/周边产品设计制作
+                      互动营销推广类H5及小程序设计制作，如互动小游戏/互动性宣传页/活动报名页等
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <img src="img/about_pic_4.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <footer id="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="aligncenter">
-              <img src="img/homepage_title_4.png" alt="" />
+      </section>
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <img src="img/homepage_title_4.png" alt="" />
+              </div>
+              <br />
             </div>
-            <br />
+          </div>
+          <div class="row" style="margin-top: 40px; justify-content: center;">
+            <span
+              data-type="wechat"
+              href="#"
+              class=""
+              style="margin: 0 10px; cursor: pointer;"
+            >
+              <img class="footer-concat-img" src="img/icon_wechat.png" />
+            </span>
+            <span
+              data-type="phone"
+              href="#"
+              class=""
+              style="margin: 0 10px; cursor: pointer;"
+            >
+              <img class="footer-concat-img" src="img/icon_phone.png" />
+            </span>
+            <span
+              data-type="email"
+              href="#"
+              class=""
+              style="margin: 0 10px; cursor: pointer;"
+            >
+              <img class="footer-concat-img" src="img/icon_email.png" />
+            </span>
           </div>
         </div>
-        <div class="row" style="margin-top: 40px;text-align: center;">
-          <span data-type="wechat" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-            <img class="footer-concat-img" src="img/icon_wechat.png" />
-          </span>
-          <span data-type="phone" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-            <img class="footer-concat-img" src="img/icon_phone.png" />
-          </span>
-          <span data-type="email" href="#" class="" style="margin: 0 10px; cursor: pointer;">
-            <img class="footer-concat-img" src="img/icon_email.png" />
-          </span>
+      </footer>
+    </div>
+    <div class="icon-contact">
+      <img src="img/icon_contact.png" />
+      <div class="bubble-tip">
+        <img src="img/contact_code.png" />
+        <div class="bubble-tip-content">
+          <div style="font-size: 12px;">电话</div>
+          <div style="text-decoration: underline; font-size: 16px;">
+            0571-8897557
+          </div>
+          <div style="font-size: 12px;">邮箱</div>
+          <div style="text-decoration: underline; font-size: 16px;">
+            Mlecoo-zb@163.com
+          </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <div class="icon-contact">
-    <img src="img/icon_contact.png" />
-    <div class="bubble-tip">
-      <img src="img/contact_code.png" />
-      <div class="bubble-tip-content">
-        <div style="font-size: 12px;">电话</div>
-        <div style="text-decoration: underline;font-size: 16px;">0571-8897557</div>
-        <div style="font-size: 12px;">邮箱</div>
-        <div style="text-decoration: underline;font-size: 16px;">Mlecoo-zb@163.com</div>
       </div>
     </div>
-  </div>
-  <a id="scrollup" href="#" class="scrollup">
-    <img class="icon-arrow-white" src="img/icon-arrow-white.png" />
-    <img class="icon-arrow-black" src="img/icon-arrow-black.png" />
-  </a>
-  <!-- 模态框（Modal） -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-flex">
-      <div class="modal-dialog">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img
-            src="img/contact_close.png" /></button>
-        <div class="modal-content">
-          <div class="modal-body">
-            <img class="body-img" />
-            <p class="body-p"></p>
+    <a id="scrollup" href="#" class="scrollup">
+      <img class="icon-arrow-white" src="img/icon-arrow-white.png" />
+      <img class="icon-arrow-black" src="img/icon-arrow-black.png" />
+    </a>
+    <!-- 模态框（Modal） -->
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-flex">
+        <div class="modal-dialog">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true"
+          >
+            <img src="img/contact_close.png" />
+          </button>
+          <div class="modal-content">
+            <div class="modal-body">
+              <img class="body-img" />
+              <p class="body-p"></p>
+            </div>
           </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
     </div>
-  </div>
-  <script src="js/jquery.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/animate.js"></script>
-  <script src="js/common.js"></script>
-  <script src="js/introduce.js"></script>
-</body>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/introduce.js"></script>
+  </body>
 </html>

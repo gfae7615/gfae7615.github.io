@@ -39,6 +39,42 @@ header .header-nav li a {
   margin-top: 12px;
 }
 
+/* 分页器 */
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-bottom: 50px;
+  /* --swiper-theme-color: #ff6600;
+  --swiper-pagination-color: #00ff33; */
+  /* 两种都可以 */
+}
+.swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border: 2px solid #fff;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+}
+.swiper-pagination .swiper-pagination-bullet-active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50% 50% 0 0;
+}
 /* 活动策划 */
 .features img {
   width: 100%;
@@ -105,6 +141,20 @@ header .header-nav li a {
   text-align: right;
   width: 58%;
 }
+.wrap-serve-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 30px;
+  margin-top: 20px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.wrap-serve-btn:hover {
+  background: #368746;
+}
 
 /* 介绍页 */
 .about-box:before {
@@ -127,5 +177,39 @@ header .header-nav li a {
   align-items: center;
 }
 .features-text-box {
-  width: 208px;
+  width: 280px;
+  font-size: 16px;
+  line-height: 30px;
+}
+.features-text-box p {
+  margin: 0;
+}
+
+.features-text-box h4 {
+  margin: 0;
+  padding: 4px 0 20px;
+  font-size: 20px;
+}
+
+.img-box-shadow {
+  position: relative;
+  display: inline-block;
+}
+.img-box-shadow::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0) 0, #fff 70%);
+}
+.img-box-shadow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, #fff 70%);
 }
